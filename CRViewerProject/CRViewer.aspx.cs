@@ -22,7 +22,7 @@ namespace CRViewerProject
             {
                 AllowCustomConnection = true,
                 ServerName = @"MyOrcl",
-                UserID = "systaem",
+                UserID = "system",
                 Password = "orcl"
             };
             report.Load(FILE_PATH);
