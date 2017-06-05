@@ -12,7 +12,7 @@ namespace CRViewerProject
 {
     public partial class CRViewer : System.Web.UI.Page
     {
-        private string FILE_PATH = @"CR.rpt";
+        private string FILE_PATH = @"D:\WorkStuff\CRViewerProject\CRViewerProject\CR.rpt";
         private string SEQ = "5";
 
         protected void Page_Load(object sender, EventArgs e)
@@ -26,7 +26,7 @@ namespace CRViewerProject
                 Password = "orcl"
             };
             report.Load(FILE_PATH);
-            report.SetParameterValue("SEQ", SEQ);
+            report.SetParameterValue("我的參數", SEQ);
             foreach (CREngine.Table table in report.Database.Tables)
             {
                 TableLogOnInfo log_info = table.LogOnInfo;
